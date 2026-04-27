@@ -1,4 +1,4 @@
-﻿namespace Ex_02_05;
+﻿namespace Ex_02_06;
 
 static class Program
 {
@@ -7,11 +7,13 @@ static class Program
         Console.Write("数値を入力してください->");
         int value = int.Parse(Console.ReadLine()!);
 
-        if (value % 2 == 0)
+        if (value % 4 == 0)
         {
-            value *= 10;
+            Console.WriteLine("4の倍数です");
         }
-
-        Console.WriteLine($"結果:{value}");
+        else
+        {
+            Console.WriteLine("4の倍数ではありません");
+        }
     }
 }
