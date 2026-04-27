@@ -1,4 +1,4 @@
-﻿namespace Ex_02_09;
+﻿namespace Ex_02_10;
 
 static class Program
 {
@@ -6,9 +6,9 @@ static class Program
     {
         string[] values = { "品川", "大崎", "五反田", "目黒", "恵比寿", "渋谷", "原宿", "代々木", "新宿" };
 
-        for (int i = 0; i < values.Length; i++)
+        foreach (string value in values)
         {
-            Console.WriteLine(values[i]);
+            Console.WriteLine(value);
         }
     }
 }
