@@ -5,7 +5,7 @@ string pitemName = Console.ReadLine()!;
 Console.WriteLine("単価を入力してください->");
 int price = int.Parse(Console.ReadLine()!);
 
-Item item1 = new(pitemNo, pitemName, price);
+Item item1 = new(pitemNo: pitemNo, pitemName: pitemName, pprice: price);
 
 Console.WriteLine("結果");
 

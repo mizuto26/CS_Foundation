@@ -6,7 +6,7 @@ Console.WriteLine("商品名を入力して下さい->");
 item1.itemName = Console.ReadLine();
 Console.WriteLine("単価を入力してください->");
 item1.price = int.Parse(Console.ReadLine()!);
-Print(item1);
+Print(item: item1);
 
 static void Print(Item item)
 {

@@ -8,7 +8,7 @@ Console.WriteLine("単価を入力してください->");
 item1.price = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("新しい単価を入力してください->");
-ChangePrice(int.Parse(Console.ReadLine()!));
+ChangePrice(pprice: int.Parse(Console.ReadLine()!));
 
 Console.WriteLine("結果");
 
