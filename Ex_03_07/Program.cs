@@ -1,4 +1,6 @@
-﻿Item item1 = new();
+﻿using Ex_03_07.Models;
+
+Item item1 = new();
 
 Console.WriteLine("商品番号を入力してください->");
 item1.itemNo = int.Parse(Console.ReadLine()!);
@@ -8,17 +10,4 @@ Console.WriteLine("単価を入力してください->");
 item1.price = int.Parse(Console.ReadLine()!);
 item1.Print();
 
-public class Item
-{
-    public int itemNo { get; set; }
-    public string itemName { get; set; } = string.Empty;
-    public int price { get; set; }
 
-    public void Print()
-    {
-        Console.WriteLine("結果");
-        Console.WriteLine($"商品番号 = {itemNo}");
-        Console.WriteLine($"商品名 = {itemName}");
-        Console.WriteLine($"単価 = {price}");
-    }
-}
