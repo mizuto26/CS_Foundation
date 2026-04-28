@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Ex_03_11.Modules
 {
-    public class FlashMemory : IUSB
+    public class FlashMemory : ISUB
     {
-        public void SendData()
+        public static void SendData()
         {
             Console.WriteLine("フラッシュメモリに記録してあるデータをPCに送りました");
         }
 
-        public void ReciveData()
+        public static void ReciveData()
         {
             Console.WriteLine("PCのデータをフラッシュメモリに記録しました");
         }
