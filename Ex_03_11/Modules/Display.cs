@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Ex_03_11.Modules
 {
-    public class Display : ISUB
+    public class Display : IUSB
     {
-        public static void SendData()
+        public void SendData()
         {
             Console.WriteLine("ディスプレイに表示する情報を送信しました");
         }
 
-        public static void ReciveData()
+        public void ReciveData()
         {
             Console.WriteLine("ディスプレイに表示する情報を受信しました");
         }
