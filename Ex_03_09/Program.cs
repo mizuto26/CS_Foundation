@@ -15,4 +15,3 @@ NetAccount netaccount = new(accountNo: accountNo,
                             point: point);
 
 netaccount.Print();
-
