@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ex_03_07.Models
+namespace Ex_03_07.Modules
 {
     public class Item
     {

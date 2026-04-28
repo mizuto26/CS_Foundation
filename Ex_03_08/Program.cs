@@ -1,4 +1,4 @@
-﻿using Ex_03_08.Models;
+﻿using Ex_03_08.Modules;
 NetAccount account = new();
 
 Console.WriteLine("口座番号を入力してください->");

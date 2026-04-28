@@ -1,4 +1,4 @@
-﻿using Ex_03_07.Models;
+﻿using Ex_03_07.Modules;
 
 Item item1 = new();
 
