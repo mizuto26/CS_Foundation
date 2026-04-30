@@ -13,16 +13,9 @@ Console.WriteLine($"商品番号 = {item1.itemNo}");
 Console.WriteLine($"商品名 = {item1.itemName}");
 Console.WriteLine($"単価 = {item1.price}");
 
-public class Item
+public class Item(int pitemNo, string pitemName, int pprice)
 {
-    public int itemNo;
-    public string itemName = string.Empty;
-    public int price;
-
-    public Item(int pitemNo, string pitemName, int pprice)
-    {
-        this.itemNo = pitemNo;
-        this.itemName = pitemName;
-        this.price = pprice;
-    }
+    public int itemNo = pitemNo;
+    public string itemName = pitemName;
+    public int price = pprice;
 }
