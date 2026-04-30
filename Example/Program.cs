@@ -1,27 +1,37 @@
 ﻿Warrior warrior = new Warrior();
+warrior.Greet();//Humanクラスのメソッドの呼び出し
+warrior.Attack();//Warriorクラスのメソッドの呼び出し
 
-warrior.name = "ユータ";
-warrior.hp = 10;// 別なクラスから見えないのでコンパイルエラーになる
+/// <summary>
+/// 人物を表すクラス
+/// </summary>
+public class Human
+{
+    public string? Name { get; set; }
+    public int Hp { get; private set; }
 
-warrior.Greet1();
-warrior.Greet2();// 別なクラスから見えないのでコンパイルエラーになる
+    public void Greet()
+    {
+        Console.WriteLine("Hi!");
+    }
+
+    public void Defence(int damage)
+    {
+        Hp -= damage;
+    }
+}
 
 /// <summary>
 /// 戦士を表すクラス
 /// </summary>
-public class Warrior
+public class Warrior : Human
 {
-    public string name;     // 名前を表すフィールド
-    private int hp = 10;    // 体力を表すフィールド
-    /// <summary>
-    /// 挨拶を行うメソッド
-    /// </summary>
-    public void Greet1()
+    public int Ap { get; set; } = 5;
+    public int Dp { get; set; }
+
+    public void Attack()
     {
-        Console.WriteLine($"{name}:hello!");
-    }
-    private void Greet2()
-    {
-        Console.WriteLine($"{name}:hi!");
+        Console.WriteLine("戦士は攻撃した！");
+        Console.WriteLine($"{Ap}のダメージを与えた。");
     }
 }
