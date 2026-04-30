@@ -1,5 +1,3 @@
-using System;
-
 namespace Ex_03_10.Modules
 {
     public class BlurayPlayer(string media)
