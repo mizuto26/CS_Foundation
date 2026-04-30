@@ -12,9 +12,9 @@ static class Program
         {
             Console.WriteLine($"値1 / 値2 = {Calculator.Div(x: number1, y: number2)}");
         }
-        catch (Exception e)
+        catch (DivideByZeroException)
         {
-            Console.WriteLine($"例外:{e.Message}");
+            Console.WriteLine("0では割り算できません。");
         }
     }
 }
