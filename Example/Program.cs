@@ -1,32 +1,27 @@
-﻿/// <summary>
-/// 独自例外クラス
+﻿Warrior warrior = new Warrior();
+
+warrior.name = "ユータ";
+warrior.hp = 10;// 別なクラスから見えないのでコンパイルエラーになる
+
+warrior.Greet1();
+warrior.Greet2();// 別なクラスから見えないのでコンパイルエラーになる
+
+/// <summary>
+/// 戦士を表すクラス
 /// </summary>
-public class MyException : Exception
+public class Warrior
 {
+    public string name;     // 名前を表すフィールド
+    private int hp = 10;    // 体力を表すフィールド
     /// <summary>
-    /// アプリケーション独自のエラーコード
+    /// 挨拶を行うメソッド
     /// </summary>
-    private string appErrorCode;
-    public string AppErrorCode
+    public void Greet1()
     {
-        get { return appErrorCode; }
+        Console.WriteLine($"{name}:hello!");
     }
-    /// <summary>
-    /// コンストラクタ
-    /// </summary>
-    /// <param name="message">エラーメッセージ</param>
-    public MyException(string message)
-    : base(message)
+    private void Greet2()
     {
-    }
-    /// <summary>
-    /// コンストラクタ
-    /// </summary>
-    /// <param name="AppErrorCode">アプリケーション独自のエラーコード</param>
-    /// <param name="message">エラーメッセージ</param>
-    public MyException(string AppErrorCode, string message)
-    : this(message)
-    {
-        this.appErrorCode = AppErrorCode;
+        Console.WriteLine($"{name}:hi!");
     }
 }

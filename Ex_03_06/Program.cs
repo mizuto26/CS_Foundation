@@ -9,6 +9,7 @@ item1.price = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("新しい単価を入力してください->");
 item1.ChangePrice(int.Parse(Console.ReadLine()!));
+
 Console.WriteLine("結果");
 Console.WriteLine($"商品番号 = {item1.itemNo}");
 Console.WriteLine($"商品名 = {item1.itemName}");
@@ -16,6 +17,7 @@ Console.WriteLine($"単価 = {item1.price}");
 
 Console.WriteLine("新しい単価を入力してください->");
 item1.ChangePrice(Console.ReadLine()!);
+
 Console.WriteLine("結果");
 Console.WriteLine($"商品番号 = {item1.itemNo}");
 Console.WriteLine($"商品名 = {item1.itemName}");
