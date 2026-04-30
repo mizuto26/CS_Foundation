@@ -1,5 +1,3 @@
-using System;
-
 namespace Ex_03_09.Modules
 {
     public class NetAccount(string accountNo, string accountName, int balance, int point)

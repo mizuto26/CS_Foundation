@@ -1,5 +1,3 @@
-using System;
-
 namespace Ex_03_09.Modules
 {
     public class Account(string accountNo, string accountName, int balance)
