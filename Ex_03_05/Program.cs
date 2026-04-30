@@ -12,10 +12,3 @@ Console.WriteLine("結果");
 Console.WriteLine($"商品番号 = {item1.itemNo}");
 Console.WriteLine($"商品名 = {item1.itemName}");
 Console.WriteLine($"単価 = {item1.price}");
-
-public class Item(int pitemNo, string pitemName, int pprice)
-{
-    public int itemNo = pitemNo;
-    public string itemName = pitemName;
-    public int price = pprice;
-}
