@@ -4,7 +4,7 @@ namespace Ex_03_11.Modules
     {
         public void SendData()
         {
-            Console.WriteLine("PCにマウスの移動情報を送信しました");
+            throw NotImplementedException;
         }
 
         public void ReciveData()

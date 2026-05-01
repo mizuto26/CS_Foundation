@@ -9,7 +9,7 @@ namespace Ex_03_11.Modules
 
         public void ReciveData()
         {
-            Console.WriteLine("ディスプレイに表示する情報を受信しました");
+            throw NotImplementedException;
         }
     }
 }
